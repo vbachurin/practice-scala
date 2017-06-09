@@ -16,3 +16,6 @@ project/plugins/project/
 # Scala-IDE specific
 .scala_dependencies
 .worksheet
+
+progfun4/wikipedia/src/main/resources/wikipedia/wikipedia.dat
+*.xml
