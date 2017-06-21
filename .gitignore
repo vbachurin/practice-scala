@@ -19,3 +19,4 @@ project/plugins/project/
 
 progfun4/wikipedia/src/main/resources/wikipedia/wikipedia.dat
 *.xml
+progfun4/stackoverflow/src/main/resources/stackoverflow/stackoverflow.csv
