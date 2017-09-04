@@ -34,7 +34,7 @@ class LifeCycleActor extends Actor {
 }
 
 class Supervisor extends Actor {
-  override def supervisorStrategy: SupervisorStrategy = OneForOneStrategy(maxNrOfRetries = 10, withinTimeRange = 1 minute) {
+  override def supervisorStrategy = OneForOneStrategy(maxNrOfRetries = 10, withinTimeRange = 1 minute) {
     case _: ArithmeticException => Restart
     case t => super.supervisorStrategy.decider.applyOrElse(t, (_: Any) => Escalate)
   }
