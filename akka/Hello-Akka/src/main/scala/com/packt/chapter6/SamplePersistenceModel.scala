@@ -3,6 +3,7 @@ package com.packt.chapter6
 sealed trait UserAction
 case object Add extends UserAction
 case object Remove extends UserAction
+
 case class UserUpdate(userId: String, action: UserAction)
 
 sealed trait Event
