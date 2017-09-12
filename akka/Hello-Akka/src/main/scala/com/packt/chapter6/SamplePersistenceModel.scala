@@ -10,6 +10,8 @@ sealed trait Event
 case class AddUserEvent(userId: String) extends Event
 case class RemoveUserEvent(userId: String) extends Event
 
+case object ShutdownPersistentActor
+
 case class ActiveUsers(users: Set[String] = Set.empty) {
   def update(evt: Event) = evt match {
     case AddUserEvent(userId) => copy(users + userId)

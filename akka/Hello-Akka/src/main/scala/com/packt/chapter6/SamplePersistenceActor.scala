@@ -17,7 +17,10 @@ class SamplePersistenceActor extends PersistentActor {
     case UserUpdate(userId, Remove) => persist(RemoveUserEvent(userId))(updateState)
     case "snap" => saveSnapshot(state)
     case "print" => println(state)
+    case ShutdownPersistentActor => context.stop(self)
   }
 
   override def persistenceId: String = "unique-id-1"
+
+  override def postStop(): Unit = println(s"Stopping [${self.path}")
 }
