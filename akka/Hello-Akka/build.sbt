@@ -8,5 +8,13 @@ libraryDependencies += "com.typesafe.akka" % "akka-actor_2.11" % "2.5.4"
 libraryDependencies += "com.typesafe.akka" % "akka-agent_2.11" % "2.5.4"
 libraryDependencies += "com.typesafe.akka" % "akka-testkit_2.11" % "2.5.4"
 libraryDependencies += "com.typesafe.akka" % "akka-persistence_2.11" % "2.5.4"
+
+libraryDependencies += "com.typesafe.akka" %% "akka-persistence-cassandra" % "0.25.1"
+
 libraryDependencies += "org.scalatest" % "scalatest_2.11" % "3.0.1"
+
 libraryDependencies += "org.iq80.leveldb"  % "leveldb" % "0.7"
+libraryDependencies += "org.fusesource.leveldbjni"   % "leveldbjni-all"   % "1.8"
+
+resolvers += Resolver.jcenterRepo
+libraryDependencies += "com.hootsuite" %% "akka-persistence-redis" % "0.6.0"
