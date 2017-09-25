@@ -6,9 +6,6 @@ import akka.persistence.query.journal.leveldb.scaladsl.LeveldbReadJournal
 import akka.persistence.query.{EventEnvelope, PersistenceQuery}
 import akka.stream.ActorMaterializer
 import akka.stream.scaladsl.Sink
-
-
-
 import scala.concurrent.duration._
 
 object FriendJournalReader extends App {
@@ -27,7 +24,7 @@ object FriendJournalReader extends App {
   system.scheduler.scheduleOnce(10 seconds, maria, RemoveFriend(Friend("Oliver")))
   Thread.sleep(2000)
 
-  queries.allPersistenceIds().map(id => system.log.info(s"Id received [$id]")).to(Sink.ignore).run()
+  queries.persistenceIds().map(id => system.log.info(s"Id received [$id]")).to(Sink.ignore).run()
   queries.eventsByPersistenceId("Laura").map((e: EventEnvelope) => log(e.persistenceId, e.event)).to(Sink.ignore).run()
   queries.eventsByPersistenceId("Maria").map(e => log(e.persistenceId, e.event)).to(Sink.ignore).run()
 
