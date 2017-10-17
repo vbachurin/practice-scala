@@ -22,3 +22,5 @@ libraryDependencies += "com.hootsuite" %% "akka-persistence-redis" % "0.6.0"
 libraryDependencies += "com.typesafe.akka" % "akka-persistence-query_2.11" % "2.5.4"
 
 libraryDependencies += "com.typesafe.akka" % "akka-remote_2.11" % "2.5.4"
+
+libraryDependencies += "com.typesafe.akka" %% "akka-stream-kafka" % "0.17"
