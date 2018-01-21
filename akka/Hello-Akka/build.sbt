@@ -1,6 +1,6 @@
 name := "Hello-Akka"
 
-version := "1.0"
+version := "0.13.16"
 
 scalaVersion := "2.11.7"
 
@@ -25,3 +25,4 @@ libraryDependencies += "com.typesafe.akka" % "akka-remote_2.11" % "2.5.4"
 
 libraryDependencies += "com.typesafe.akka" %% "akka-stream" % "2.5.4"
 libraryDependencies += "com.typesafe.akka" %% "akka-stream-kafka" % "0.17"
+
