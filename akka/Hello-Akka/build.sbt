@@ -28,6 +28,11 @@ libraryDependencies += "com.lightbend.akka" %% "akka-stream-alpakka-amqp" % "0.1
 libraryDependencies += "com.typesafe.akka" %% "akka-stream" % "2.5.4"
 libraryDependencies += "com.typesafe.akka" %% "akka-stream-kafka" % "0.17"
 
+libraryDependencies += "com.typesafe.akka" %% "akka-http_2.11" % "10.0.11"
+
+
+
+
 
 
 
