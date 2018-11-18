@@ -1,0 +1,11 @@
+http://www.ovh.net/files/1Mio.dat coffee.jpg
+http://www.ovh.net/files/10Mio.dat scrambled_eggs.zip
+http://www.ovh.net/files/1Mio.dat tea.jpg
+http://www.ovh.net/files/1Mio.dat coffee2.jpg
+http://www.ovh.net/files/10Mio.dat sandwich.bin
+http://www.ovh.net/files/10Mio.dat sandwich2.bin
+http://www.ovh.net/files/10Mio.dat sandwich3.bin
+http://www.ovh.net/files/10Mio.dat sandwich4.bin
+http://www.ovh.net/files/10Mio.dat sandwich5.bin
+http://www.ovh.net/files/10Mio.dat sandwich6.bin
+http://www.ovh.net/files/10Mio.dat sandwich7.bin
